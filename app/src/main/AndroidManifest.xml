@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectomc_dispmov">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/ProyectoFinal_DispMov"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoMCDispMov">
+        <activity
+            android:name=".Sugerencias1"
+            android:exported="true" />
+        <activity
+            android:name=".Sugerencias"
+            android:exported="true" />
+        <activity
+            android:name=".Ayuda"
+            android:exported="true" />
+        <activity
+            android:name=".Configuracion"
+            android:exported="true" />
+        <activity
+            android:name=".Seleccion1"
+            android:exported="true" />
+        <activity
+            android:name=".Seleccion2"
+            android:exported="true" />
+        <activity
+            android:name=".Inicio"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
