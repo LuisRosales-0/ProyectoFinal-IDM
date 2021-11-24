@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMCDispMov">
+
         <activity
             android:name=".Sugerencias1"
-            android:exported="true" />
-        <activity
-            android:name=".Sugerencias"
             android:exported="true" />
         <activity
             android:name=".Ayuda"
