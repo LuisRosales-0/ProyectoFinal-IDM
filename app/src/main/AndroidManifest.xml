@@ -5,11 +5,16 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/ProyectoFinal_DispMov"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMCDispMov">
-
+        <activity
+            android:name=".Registro"
+            android:exported="true" />
+        <activity
+            android:name=".Autentificacion"
+            android:exported="true" />
         <activity
             android:name=".Sugerencias1"
             android:exported="true" />

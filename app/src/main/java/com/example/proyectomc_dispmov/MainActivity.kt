@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
     Ingresar.setOnClickListener {
-        val intent:Intent = Intent(this, Inicio::class.java)
+        val intent:Intent = Intent(this, Autentificacion::class.java)
         startActivity(intent)
     }
 
