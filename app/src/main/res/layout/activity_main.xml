@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/Ingresar"
+        android:id="@+id/Ingres"
         android:layout_width="136dp"
         android:layout_height="56dp"
         android:backgroundTint="@android:color/holo_red_light"
