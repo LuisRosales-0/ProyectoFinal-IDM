@@ -1,14 +1,12 @@
 package com.example.proyectomc_dispmov
 
-import android.app.AlertDialog
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.proyectomc_dispmov.databinding.ActivityAutentificacionBinding
-import com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar
-import kotlinx.android.synthetic.main.activity_registro.*
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -42,8 +40,11 @@ class Autentificacion : AppCompatActivity() {
                 }
             }
         }
+        binding.crearcuenta.setOnClickListener {
+            val intent  = Intent(this, Registro::class.java)
+            startActivity(intent)
+        }
     }
-
     private fun InicioSesion(email : String, password : String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
