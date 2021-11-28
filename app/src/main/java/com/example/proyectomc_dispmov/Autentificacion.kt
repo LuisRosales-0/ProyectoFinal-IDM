@@ -33,10 +33,11 @@ class Autentificacion : AppCompatActivity() {
             when{
                 lcorreo.isEmpty() || lcontrasena.isEmpty() -> {
                     Toast.makeText(baseContext,
-                        "Asegurese de ingresar todos los campos!.",
-                        Toast.LENGTH_SHORT).show()
+                        "Asegurese de ingresar todos los campos!.", Toast.LENGTH_SHORT).show()
                 }else -> {
                     InicioSesion(lcorreo, lcontrasena)
+                acceso()
+                finish()
                 }
             }
         }
@@ -50,7 +51,6 @@ class Autentificacion : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d("TAG", "signInWithEmail:success")
-                    acceso()
                 } else {
                     Log.w("TAG", "signInWithEmail:failure", task.exception)
                     Toast.makeText(baseContext, "Correo y/o Contraseña erroneos, porfavor vuelva" +

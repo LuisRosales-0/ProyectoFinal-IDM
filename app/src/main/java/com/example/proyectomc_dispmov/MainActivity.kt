@@ -24,12 +24,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth= Firebase.auth
+        val user = Firebase.auth.currentUser
+        if (user != null) {
+            Ingres.setOnClickListener {
+                val intent = Intent(this,Inicio::class.java)
+                startActivity(intent)
+            }
 
-        Ingres.setOnClickListener {
-            val intent  = Intent(this,Autentificacion::class.java)
-            startActivity(intent)
-
+        } else {
+            Ingres.setOnClickListener {
+                val intent  = Intent(this,Autentificacion::class.java)
+                startActivity(intent)
+            }
         }
+
+
 
     }
 

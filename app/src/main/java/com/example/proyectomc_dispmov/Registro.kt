@@ -36,8 +36,6 @@ class Registro : AppCompatActivity() {
             val mrepeatpassword = binding.passwordrepetir.text.toString()
 
 
-            val passwordRegex = Pattern.compile(".{6,}")
-
             if (memail.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(memail).matches()) {
                 Toast.makeText(baseContext, "Ingrese un email valido!", Toast.LENGTH_SHORT).show()
             } else if(mpassword.isEmpty()){
@@ -55,6 +53,7 @@ class Registro : AppCompatActivity() {
                 val intent = Intent(this, Autentificacion::class.java)
                 startActivity(intent)
                 Toast.makeText(baseContext, "Registrado correctamente!.", Toast.LENGTH_SHORT).show()
+                finish()
             }
         }
     }
