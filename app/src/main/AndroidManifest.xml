@@ -11,6 +11,10 @@
         android:theme="@style/Theme.ProyectoMCDispMov">
 
         <activity
+            android:name=".Inicio"
+            android:exported="true"
+            />
+        <activity
             android:name=".Registro"
             android:exported="true" />
         <activity
@@ -32,7 +36,7 @@
             android:name=".Seleccion2"
             android:exported="true" />
         <activity
-            android:name=".Inicio"
+            android:name=".Armapc"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
