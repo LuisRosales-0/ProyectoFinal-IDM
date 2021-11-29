@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMCDispMov">
-
+        <activity
+            android:name=".Olvdiarcontrasena2"
+            android:exported="true" />
+        <activity
+            android:name=".Olvidarcontrasena1"
+            android:exported="true" />
         <activity
             android:name=".Inicio"
-            android:exported="true"
-            />
+            android:exported="true" />
         <activity
             android:name=".Registro"
             android:exported="true" />

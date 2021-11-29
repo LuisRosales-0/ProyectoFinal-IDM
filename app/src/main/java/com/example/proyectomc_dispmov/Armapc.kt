@@ -18,9 +18,6 @@ class Armapc : AppCompatActivity() {
             val intent:Intent = Intent(this, Seleccion1::class.java)
             startActivity(intent)
         }
-        config.setOnClickListener {
-            val intent:Intent = Intent(this, Configuracion::class.java)
-            startActivity(intent)
-        }
+
     }
 }

@@ -45,6 +45,10 @@ class Autentificacion : AppCompatActivity() {
             val intent  = Intent(this, Registro::class.java)
             startActivity(intent)
         }
+        binding.olvidocontrasena.setOnClickListener {
+            val intent = Intent(this, Olvidarcontrasena1::class.java)
+            startActivity(intent)
+        }
     }
     private fun InicioSesion(email : String, password : String) {
         auth.signInWithEmailAndPassword(email, password)

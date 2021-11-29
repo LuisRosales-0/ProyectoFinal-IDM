@@ -16,7 +16,5 @@ class Inicio : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
     }
 }
