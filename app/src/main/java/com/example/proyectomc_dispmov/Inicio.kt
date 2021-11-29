@@ -10,11 +10,25 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
-        val imagenclick = findViewById<ImageView>(R.id.armaa)
-        imagenclick.setOnClickListener {
+        val imagenclick1 = findViewById<ImageView>(R.id.armaa)
+        imagenclick1.setOnClickListener {
             val intent = Intent(this, Armapc::class.java)
             startActivity(intent)
         }
+        val imagenclick2 = findViewById<ImageView>(R.id.agrega1)
+        imagenclick2.setOnClickListener {
+            val intent = Intent(this, Agrega0::class.java)
+            startActivity(intent)
+        }
+        val imagenclick3 = findViewById<ImageView>(R.id.agrega2)
+        imagenclick3.setOnClickListener {
+            val intent = Intent(this, Agrega0::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
     }
 }

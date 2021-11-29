@@ -2,18 +2,16 @@ package com.example.proyectomc_dispmov
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import kotlinx.android.synthetic.main.activity_seleccion2.*
+import kotlinx.android.synthetic.main.activity_agrega.*
 
-class Seleccion2 : AppCompatActivity() {
+class Agrega : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_seleccion2)
+        setContentView(R.layout.activity_agrega)
 
-        val producto = Productos("Intel Core i5-7640X", 2599.00, R.drawable.intelcorei5)
+        val producto = Productos("Intel Core i5-7640X", 2599.00, R.drawable.intelcorei5,)
         val producto2 = Productos("Intel Core i3-9100", 2579.00, R.drawable.intelcorei3)
 
         val producto3 = Productos("RAM Team Group Delta TUF DDR4, 3200MHz 16GB", 1499.00, R.drawable.ramtdelta)
@@ -26,5 +24,6 @@ class Seleccion2 : AppCompatActivity() {
 
         val adapter = Productos_adapter(this, ListaProductos)
         lista.adapter = adapter
+
     }
 }

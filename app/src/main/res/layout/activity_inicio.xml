@@ -13,11 +13,48 @@
         android:layout_height="wrap_content"
         tools:context=".Pantallainicio">
 
+        <ImageView
+            android:id="@+id/agrega1"
+            android:layout_width="154dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="128dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:srcCompat="@drawable/agregar1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/agrega2"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="112dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:srcCompat="@drawable/addicon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:layout_marginEnd="60dp"
+            android:text="Agrega componentes"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="55dp"
             android:text="Arma tu PC"
             android:textColor="@color/black"
@@ -45,7 +82,7 @@
             android:id="@+id/armaa"
             android:layout_width="154dp"
             android:layout_height="127dp"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:clickable="true"
             app:layout_constraintStart_toStartOf="parent"

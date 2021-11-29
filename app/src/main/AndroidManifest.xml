@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMCDispMov">
         <activity
+            android:name=".Agrega0"
+            android:exported="true" />
+        <activity
             android:name=".Olvdiarcontrasena2"
             android:exported="true" />
         <activity
@@ -37,7 +40,7 @@
             android:name=".Seleccion1"
             android:exported="true" />
         <activity
-            android:name=".Seleccion2"
+            android:name=".Agrega"
             android:exported="true" />
         <activity
             android:name=".Armapc"

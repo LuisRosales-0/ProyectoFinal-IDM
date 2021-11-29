@@ -18,8 +18,6 @@ class Productos_adapter(private val mContext: Context, private val ListaProducto
 
 
 
-
-
         return  layout
     }
 
