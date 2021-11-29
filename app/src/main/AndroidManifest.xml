@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMCDispMov">
         <activity
+            android:name=".Guardado"
+            android:exported="true" />
+        <activity
+            android:name=".Atribuciones"
+            android:exported="true" />
+        <activity
+            android:name=".Acercade"
+            android:exported="true" />
+        <activity
+            android:name=".Noticias"
+            android:exported="true" />
+        <activity
+            android:name=".Sugerencias2"
+            android:exported="true" />
+        <activity
+            android:name=".Agrega1"
+            android:exported="true" />
+        <activity
             android:name=".Agrega0"
             android:exported="true" />
         <activity

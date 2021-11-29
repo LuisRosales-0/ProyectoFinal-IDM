@@ -1,8 +1,10 @@
 package com.example.proyectomc_dispmov
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_agrega.*
+import kotlinx.android.synthetic.main.activity_armapc.*
 
 class Agrega : AppCompatActivity() {
 
@@ -24,6 +26,13 @@ class Agrega : AppCompatActivity() {
 
         val adapter = Productos_adapter(this, ListaProductos)
         lista.adapter = adapter
+
+        aceptar.setOnClickListener {
+            val intent: Intent = Intent(this, Agrega1::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }
