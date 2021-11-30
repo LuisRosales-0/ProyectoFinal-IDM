@@ -6,8 +6,6 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_agrega.*
 
 class Agrega : AppCompatActivity() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agrega)
@@ -26,7 +24,7 @@ class Agrega : AppCompatActivity() {
         val adapter = Productos_adapter(this, ListaProductos)
         lista.adapter = adapter
 
-        aceptar.setOnClickListener {
+        calcularr.setOnClickListener {
             val intent: Intent = Intent(this, Agrega1::class.java)
             startActivity(intent)
         }

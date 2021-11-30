@@ -7,18 +7,16 @@
     tools:context=".Seleccion1">
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="245dp"
-        android:layout_height="25dp"
-        android:text="Ingrese el monto: "
-        android:textColor="#000000"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Precio por componente (c/u)."
+        android:textAlignment="center"
+        android:textColor="#8C8C8C"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintTop_toBottomOf="@+id/monto" />
 
     <TextView
         android:id="@+id/textView21"
@@ -37,9 +35,9 @@
         app:layout_constraintVertical_bias="0.796" />
 
     <Button
-        android:id="@+id/aceptar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/calcularr"
+        android:layout_width="108dp"
+        android:layout_height="57dp"
         android:backgroundTint="@android:color/holo_red_light"
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,4 +46,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.155" />
+
+    <Button
+        android:id="@+id/menu2"
+        android:layout_width="202dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Menu Principal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liist"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <TextView
+        android:id="@+id/aviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/liist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monto" />
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_width="251dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Ingrese su capital:"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/calcularr"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ListView
+        android:id="@+id/liist"
+        android:layout_width="385dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monto"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
