@@ -1,21 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Atribuciones">
+    android:fillViewport="true"
 
-    <Button
-        android:id="@+id/volver2"
-        android:layout_width="202dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/purple_500"
-        android:text="Volver"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Acercade">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="122dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:srcCompat="@drawable/flaticon" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="253dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Flaticon(flaticon.com)\n-Iconos de la App"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="122dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:srcCompat="@drawable/firebase" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="253dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Firebase \n-API de Firebase"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="229dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-5dp"
+            android:text="*Autentificación(Login/Registro)\n*Realtime Database(Base de datos)"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="122dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView60"
+            app:srcCompat="@drawable/android" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="260dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Android Studio\n -Desarrollo de la aplicación"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+        <Button
+            android:id="@+id/volver2"
+            android:layout_width="202dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Volver"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Principales colaboradores que permitieron desarrollar esta aplicación."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Atribuciones"
+            android:textColor="@color/purple_500"
+            android:textSize="55sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
