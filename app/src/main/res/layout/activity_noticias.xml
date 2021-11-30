@@ -6,6 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".Noticias">
 
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="248dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="2dp"
+        android:text="Steam ha registrado un nuevo pico de usuarios simultáneos que se sitúa en los 27.384.959 jugadores.\nCristina M. Pérez HACE 16 HORAS"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="159dp"
+        android:layout_height="147dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-85dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView54"
+        app:layout_constraintEnd_toStartOf="@+id/textView54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/steam" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:text="Steam supera los 27 millones de jugadores simultáneos"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="402dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="15dp"
+        android:text="Enterate de lo que esta pasando en el mundo de la computacion."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="159dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="-85dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView52"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52"
+        app:srcCompat="@drawable/amd" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="250dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="20dp"
+        android:text="AMD se suma al pesimismo de Intel y Nvidia: la escasez de componentes se prolongará hasta 2023"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="248dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="-10dp"
+        android:text="INDUSTRIA \nLa coincidencia de posturas entre los responsables de las compañías es total. \nJUAN SANMARTÍN HACE 14 HORAS"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Noticias"
+        android:textColor="@color/purple_500"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
         android:id="@+id/acepp"
         android:layout_width="187dp"
@@ -17,4 +122,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
