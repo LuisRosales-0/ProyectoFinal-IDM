@@ -41,9 +41,9 @@ class Seleccion : AppCompatActivity() {
        calculartot.setOnClickListener {
            var sumatotal = 0
            if (precio1.isChecked)
-               sumatotal += 2599
-           if(precio2.isChecked)
                sumatotal += 2579
+           if(precio2.isChecked)
+               sumatotal += 2599
            if (precio3.isChecked)
                sumatotal += 1499
            if (precio4.isChecked)
