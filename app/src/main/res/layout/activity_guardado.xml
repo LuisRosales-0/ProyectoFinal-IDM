@@ -45,15 +45,14 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listg"
-        app:layout_constraintVertical_bias="0.842" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ListView
-        android:id="@+id/listg"
-        android:layout_width="373dp"
-        android:layout_height="337dp"
-        android:layout_marginTop="20dp"
+    <TextView
+        android:id="@+id/guardados"
+        android:layout_width="161dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />

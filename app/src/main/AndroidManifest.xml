@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMCDispMov">
         <activity
+            android:name=".Seleccion"
+            android:exported="true" />
+        <activity
             android:name=".Sugerencias3"
             android:exported="true" />
         <activity

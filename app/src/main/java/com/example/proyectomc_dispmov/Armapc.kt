@@ -11,11 +11,11 @@ class Armapc : AppCompatActivity() {
         setContentView(R.layout.activity_armapc)
 
         Opcion1.setOnClickListener {
-            val intent:Intent = Intent(this, Seleccion1::class.java)
+            val intent:Intent = Intent(this, Seleccion::class.java)
             startActivity(intent)
         }
         Opcion2.setOnClickListener {
-            val intent:Intent = Intent(this, Agrega::class.java)
+            val intent:Intent = Intent(this, Seleccion1::class.java)
             startActivity(intent)
         }
 
